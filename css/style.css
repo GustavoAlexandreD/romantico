@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral */
+  body {
+    background-image: url("../images/background.jpg");
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+   
+    font-family: 'Dancing Script', cursive; /* Fonte romântica */
+    color: white;
+    overflow: hidden;
+    font-style: italic; /* Todas as letras em itálico */
+    overflow-y: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffccf9; /* Rosa forte */
+    color: red;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem; /* Texto maior */
+    font-weight: 600;
+  }
+  
+  /* Nav */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff1744; /* Vermelho */
+    padding: 10px 0;
+    z-index: 10; /* Certifica que a nav esteja acima */
+    position: relative; /* Permite z-index funcionar */
+  }
+  
+  nav div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; /* Texto maior */
+    font-weight: 600;
+  }
+  
+  /* Section com coração */
+  .heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto; /* adicionado margin-top para descer o coração */
+    padding-bottom: 150px;
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* ajuste o valor para o tamanho desejado */
+  }
+  
+  .heart {
+    position: relative; /* mudado de absolute para relative */
+    width: 250px;
+    height: 250px;
+    background-color: #ff1744;
+    transform: rotate(-45deg);
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #ff1744;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -125px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: 125px;
+    top: 0;
+  }
+  
+  .heart-photo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 25px;
+    left: 25px;
+    transform: rotate(45deg);
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Footer com mensagem de amor */
+  footer {
+    background-color: #e91e63; /* Rosa */
+    text-align: center;
+    padding: 20px;
+    font-size: 2.0rem;
+    font-weight: 600;
+    bottom: 0;
+    position: relative;
+    margin-top: 100px; /* Espaço acima do rodapé */
+    display: block; /* adicionado para mostrar o footer */
+    clear: both; /* adicionado para que o footer fique abaixo do conteúdo */
+    overflow: visible;
+  }
+  
+  .contador {
+    text-align: center; /* Centraliza o texto */
+    font-size: 3.0rem; /* Tamanho da fonte */
+    color: #ff1744; /* Cor do texto */
+    margin: 10px 0; /* Margens acima e abaixo */
+}
+  
+/* Estrelas animadas */
+.star-animation {
+  position: absolute;
+  top: -10px; /* Começar um pouco acima da tela */
+  left: calc(random() * 100vw); /* Posicionar aleatoriamente na largura da tela */
+  background-color: #ff4d4d; /* Cor padrão da estrela */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Formato de estrela */
+  animation: fall 6s linear infinite;
+  opacity: 0.8;
+
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.quotes-section {
+  background-color: #ffccf9; /* Fundo branco semi-transparente */
+  color: #ff1744; /* Cor do texto */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 20px auto; /* Margem superior e inferior */
+  max-width: 600px; /* Largura máxima */
+}
+
+.quote-text {
+  font-size: 2.5rem; /* Tamanho da fonte */
+  font-style: italic; /* Estilo em itálico */
+  margin: 10px 0; /* Margem para espaçar o texto */
+}

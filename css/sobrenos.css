@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffccf9; /* Roxo bebê */
+  font-family: 'Dancing Script', cursive; /* Fonte romântica */
+  color: white;
+  overflow: hidden;
+  font-style: italic; /* Todas as letras em itálico */
+  overflow-y: auto;
+}
+
+header {
+  background-color: #ffccf9; /* Rosa forte */
+  color: red;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem; /* Texto maior */
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff1744; /* Vermelho */
+  padding: 10px 0;
+  z-index: 10; /* Certifica que a nav esteja acima */
+  position: relative; /* Permite z-index funcionar */
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; /* Texto maior */
+  font-weight: 600;
+}
+
+footer {
+  background-color: #e91e63; /* Rosa */
+  text-align: center;
+  padding: 20px;
+  font-size: 2.0rem;
+  font-weight: 600;
+  bottom: 0;
+  position: relative;
+  margin-top: 100px; /* Espaço acima do rodapé */
+  display: block;
+  clear: both;
+  overflow: visible;
+}
+
+.ideias, .frases {
+  background-color: #ffccf9; /* Fundo branco semi-transparente */
+  color: #ff1744; /* Cor do texto */
+  padding: 20px; /* Adicionado */
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 100%; /* Adicionado */
+  text-align: justify; /* Texto alinhado nas duas bordas */
+}
+
+.ideias h1, .frases h1{
+  font-size: 3.0rem; /* Texto maior */
+  font-weight: 600;
+  text-align: center; /* Centraliza o texto */
+}
+
+.ideias ul, .frases ul {
+  list-style-type: none; /* Remove marcadores padrão */
+  padding: 0;
+  margin: 0 20px; /* Adicionado um mínimo de distância das bordas */
+}
+
+.ideias li, .frases li {
+  margin: 30px 0; /* Margem para espaçar os itens */
+  font-size: 2.5rem; /* Tamanho da fonte */
+  border-bottom: 1px solid red;
+}
+
+.frases li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .ideias, .frases {
+      max-width: 100%; /* Ajusta largura para 100% em telas pequenas */
+      margin: 10px;
+  }
+  
+  nav div a {
+      font-size: 1.2rem; /* Texto menor para telas menores */
+  }
+
+  header {
+      font-size: 2rem; /* Reduz o tamanho da fonte em telas menores */
+  }
+
+  footer {
+      font-size: 1.5rem;
+  }
+
+  .ideias li, .frases li {
+      font-size: 1.4rem; /* Tamanho de fonte ajustado para telas pequenas */
+  }
+}
