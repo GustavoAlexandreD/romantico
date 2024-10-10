@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffccf9; /* Roxo bebê */
+  font-family: 'Dancing Script', cursive; /* Fonte romântica */
+  color: white;
+  overflow: hidden;
+  font-style: italic; /* Todas as letras em itálico */
+  overflow-y: auto;
+}
+
+header {
+  background-color: #ffccf9; /* Rosa forte */
+  color: red;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem; /* Texto maior */
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff1744; /* Vermelho */
+  padding: 10px 0;
+  z-index: 10; /* Certifica que a nav esteja acima */
+  position: relative; /* Permite z-index funcionar */
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; /* Texto maior */
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  justify-content: center;
+  width: 100%;
+}
+.lista{
+  width: 100%;
+  padding: 5%;
+}
+
+.lista h1{
+  font-size: 2.0rem; /* Texto maior */
+  font-weight: 600;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ol li {
+  padding: 10px;
+  border-bottom: 1px solid red;
+  font-size: 30px; /* Aumente o tamanho das letras da lista */
+  font-weight: bold;
+  text-align: left;
+}
+
+.images {
+  margin-top: 20px; /* Adicione um espaçamento entre a lista e as imagens */
+  width: 100%; /* Adicione essa propriedade para que as imagens ocupem a página toda */
+  padding: 5%;
+  text-align: center;
+}
+.images h1{
+  font-size: 2.0rem; /* Texto maior */
+  font-weight: 600;
+  text-align: center;
+}
+
+.images img {
+  max-width: 30%; /* Ajuste o valor de acordo com sua necessidade */
+  height: auto;
+  display: inline-block;
+  margin: 5px; /* Adicione um espaçamento entre as imagens */
+  border: 1px solid red;
+}
+
+footer {
+  background-color: #e91e63; /* Rosa */
+  text-align: center;
+  padding: 20px;
+  font-size: 2.0rem;
+  font-weight: 600;
+  bottom: 0;
+  position: relative;
+  margin-top: 100px; /* Espaço acima do rodapé */
+  display: block; /* Adicionado para mostrar o footer */
+  clear: both; /* Adicionado para que o footer fique abaixo do conteúdo */
+  overflow: visible;
+}
